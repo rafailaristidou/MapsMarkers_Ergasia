@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MapsMarkers_Ergasia</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--Epiloges Esthitiron-->
+    <string-array name="esthitires">
+        <item>Βαρόμετρο</item>
+        <item>Φωτόμετρο</item>
+        <item>Θερμόμετρο</item>
+        <item>Αισθητήρας Υγρασίας</item>
+    </string-array>
+
+    <!--Epiloges Xromatos-->
+    <string-array name="xromata">
+        <item>AZURE</item>
+        <item>BLUE</item>
+        <item>CYAN</item>
+        <item>GREEN</item>
+        <item>MAGENTA</item>
+        <item>ORANGE</item>
+        <item>RED</item>
+        <item>ROSE</item>
+        <item>VIOLET</item>
+        <item>YELLOW</item>
+
+    </string-array>
+
+
+</resources>

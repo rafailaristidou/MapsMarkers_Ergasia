@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--        textview pou otan gini click klini to popup arxio ston fakelo drawable dimiourgisame ton kiklo gia to sxima-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="475dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/closepop"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:background="@drawable/cerclebackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="closepopup"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!--               TextView kai Spinner gia tin epilogi esthitira-->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp">
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3"
+                    android:text="Αισθητήρα Περιβάλοντος"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/esthitires"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <!--                    Gia tin emfanisi tis timis tou esthitira analoga tis epilogis tou proigoumenou spinner-->
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="3"
+                    android:gravity="left"
+                    android:text="Αποτέλεσμα Μέτρησης"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/metrisistxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="  "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <!--                    TextView kai Spinner gia tin epilogi xromatos Marker-->
+                <TextView
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="2"
+                    android:text="Χρώματος Marker"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+
+                <Spinner
+                    android:id="@+id/xromata"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="3"
+
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="3"
+                    android:text="Περιγραφή Για Το Σημείο"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+        </TableLayout>
+        <!--            Isagogi perigrafis-->
+        <EditText
+            android:id="@+id/dectxt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColor="@color/white"></EditText>
+
+        <!--            koumpi gia tin apothikefsi ton stixion sti vasi dimiourgisame idiko style sto drawble me to onoma buutonstyle-->
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="savetoFirestore"
+            android:text="Save Location"
+            android:textColor="@color/white"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
